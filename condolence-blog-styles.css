@@ -1,3 +1,12 @@
+/*
+Title: Single blog post for submitting and displaying comments
+Description: Styles override default theme styles to apply corporate colours and fonts
+Version: 1.1
+Created by: Crystal Springall
+Date created: 13/04/2021
+Last updated: 07/06/2021
+*
+
 @import url("https://fonts.googleapis.com/css?family=Muli:400,700");
  * {
      -webkit-box-sizing: border-box;
