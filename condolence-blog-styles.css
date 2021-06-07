@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700");
+ * {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+/* CSS reset */
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     outline: 0;
+     font-weight: inherit;
+     font-style: inherit;
+     font-family: inherit;
+     font-size: 100%;
+     vertical-align: baseline;
+}
+/* Init theme changes */
+ .entry {
+    text-align: justify;
+    padding: 2px;
+}
+ a:link, a:active, a:visited {
+    color: #3388cb;
+    text-decoration: none;
+}
+ a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+ .footer_table p {
+    margin:0;
+     padding:0;
+}
+ br.clear {
+    display:none;
+}
+ form#commentform fieldset {
+    border:2px solid #999;
+     padding:0 15px 15px 15px;
+}
+ form#commentform legend {
+    margin:0;
+     font-size:1.3em;
+}
+ form#commentform label.error {
+    color: #ff0000;
+}
+ form#commentform p.error {
+    color: #ff0000;
+}
+/* Custom changes */
+ body {
+     background-color: #000;
+     color: #252b36;
+     font-family: "Muli", sans-serif;
+     margin: 0;
+    padding: 0;
+     font-size: 18px;
+     line-height: 1.5;
+     height: 100vh;
+     flex-direction: column;
+     display: flex;
+}
+ #container, p.postmetadata, .footer_table, .post-date, .header {
+     display:none;
+}
+/* incase of banner includes not working - uncomment below */
+/*.header {
+     padding: 1rem 1rem 1rem 12rem;
+     background: url('/site/dist/images/site-logo-footer.png') no-repeat 20px #002554;
+}
+ .headerInner {
+     text-align: right;
+}
+*/
+ h1#sitetitle, .banner__title {
+     font-size: 24px;
+}
+ h1#sitetitle a {
+     color: #fff;
+}
+ #leftcolumn, #container {
+    background-color: #fff;
+     width: 100%;
+     max-width:960px;
+     padding: 1rem;
+     margin:0 auto 2rem;
+}
+ #mainContent, #content {
+     margin: 0 auto;
+     padding:0;
+}
+ .main_table {
+     padding:0;
+     margin:0;
+}
+ .post h2, h2.post-title {
+     font-size: 23px ;
+    color: #002554;
+}
+ h2, p {
+     margin-bottom: 1rem;
+}
+ strong {
+     font-weight: bold;
+}
+ .post {
+     text-align: center;
+}
+ fieldset {
+     margin-top: 0.5rem;
+}
+ legend {
+     width: 100%;
+     color: #002554;
+     font-weight: bold;
+     font-size: 20px;
+}
+ form#commentform {
+    margin-top:.5rem;
+}
+ form#commentform label {
+     font-weight: bold;
+     color: #002554;
+     display:block;
+}
+ form#commentform input, form#commentform textarea {
+     border: 1px solid #252b36;
+     width: 100%;
+     padding: 1rem;
+}
+ form#commentform .form__control {
+     margin-bottom: 1rem;
+}
+ form#commentform .button {
+     background-color: #002554;
+     color: #fff;
+     border-radius: 0px;
+     padding: 1rem;
+     border: 0;
+     font-family: "Muli",sans-serif;
+     font-size: 1.125rem;
+     font-weight: 700;
+     width: 100%;
+     cursor: pointer;
+}
+ h3 {
+     font-size: 24px;
+     color: #002554;
+     margin: 1rem 0;
+}
+ h3#comments {
+     clear: both;
+}
+ #commentlist li {
+     list-style: none;
+     padding: 1rem;
+     background-color: #cceffd;
+     color: #002554;
+     margin-top: 1rem;
+}
+ #commentlist li cite {
+     font-weight: bold;
+}
+ #commentlist .commentmetadata {
+     font-size:15px;
+     font-weight: bold;
+}
+ #commentlist li p {
+     margin: 0.5rem 0;
+}
+ #commentform h2 {
+     display: none;
+}
+ .box {
+     padding: 1rem;
+     font-style:italic;
+     margin-top: 1rem;
+}
+ .box p {
+     margin: 0.5rem 0;
+}
+ .banner, .footer {
+     padding: 1rem;
+     background-color: #002554;
+}
+ .footer {
+    margin-top: auto;
+}
+ .footer p {
+     text-align: center;
+     color: white;
+     margin: 0;
+}
+ .banner__image {
+     width: 200px;
+}
+ .banner {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+ .banner__title {
+     color: white;
+     padding: 0;
+}
+ .banner__logo {
+     height: 45px;
+}
+/* Mobile styles */
+ @media screen and (min-width: 800px) {
+     .post h2, h2.post-title {
+         font-size: 32px;
+    }
+     .banner__title {
+         font-size: 36px;
+    }
+     .banner__logo {
+         margin-left: 1rem;
+    }
+     #commentlist {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-gap: 20px;
+         margin-top: 1rem;
+    }
+     #commentlist li {
+         margin-top: 0;
+    }
+}
